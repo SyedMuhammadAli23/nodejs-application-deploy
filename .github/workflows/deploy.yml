@@ -24,6 +24,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo -i 
-            sudo cd /root/nodejs-application-deploy
+            cd nodejs-application-deploy
             sudo git pull 
-            docker-compose up -d --build
+            sudo docker-compose up -d --build
